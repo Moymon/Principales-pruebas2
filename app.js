@@ -35,7 +35,7 @@ function MuestraPokedex(e)
                     if(tam[0] == TipoSeleccionado)
                     {
                         contenido += `<div class=" border textcenter id="${pokes.pokemons[i].name}" onclick="Unique('${pokes.pokemons[i].name}')
-                        ontouchend=Unique('${pokes.pokemons[i].name}')"">`;
+                        ontouch=Unique('${pokes.pokemons[i].name}')"">`;
                         /*console.log(pokes.pokemons[i].name);*/
                         contenido+=`<p> CP  ${pokes.pokemons[i].cp} </p>`;
                         contenido+= `<img src="${pokes.pokemons[i].sprite} ">`;
@@ -46,7 +46,7 @@ function MuestraPokedex(e)
                     else if(tam[1] == TipoSeleccionado)
                         {
                             contenido += `<div class=" border textcenter id="${pokes.pokemons[i].name}" onclick="Unique('${pokes.pokemons[i].name}')"
-                            ontouchend=Unique('${pokes.pokemons[i].name}')">`;
+                            ontouch=Unique('${pokes.pokemons[i].name}')">`;
                             /*console.log(pokes.pokemons[i].name);*/
                             contenido+=`<p> CP  ${pokes.pokemons[i].cp} </p>`;
                             contenido+= `<img src="${pokes.pokemons[i].sprite} ">`;
@@ -57,7 +57,7 @@ function MuestraPokedex(e)
                 }else if(TipoSeleccionado == 0)
                 {
                     contenido += `<div class=" border textcenter id="${pokes.pokemons[i].name}" onclick="Unique('${pokes.pokemons[i].name}')" 
-                    ontouchend=Unique('${pokes.pokemons[i].name}')">`;
+                    ontouch=Unique('${pokes.pokemons[i].name}')">`;
                     /*console.log(pokes.pokemons[i].name);*/
                     contenido+=`<p> CP  ${pokes.pokemons[i].cp} </p>`;
                     contenido+= `<img src="${pokes.pokemons[i].sprite} ">`;
