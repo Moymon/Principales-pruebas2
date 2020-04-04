@@ -1,6 +1,7 @@
 *
 {
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .col-1{width: 8.33%;}
@@ -130,17 +131,20 @@
     background-color: lightgray;
 }
 
-.seccion-title
-{
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2em;
-}
-
-
 .textwhite
 {
     color: whitesmoke;
+}
+
+.Tip
+{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: ghostwhite;
 }
 
 .contenidoflex
@@ -164,3 +168,79 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5em;
 }
+
+.NORMAL
+{
+    background-color: #837979;
+}
+
+.FIRE
+{
+    background-color: #c20000;
+}
+
+.WATER
+{
+    background-color: #375fff;
+}
+ 
+.ELECTRIC
+{
+    background-color: #ddce00;
+}
+
+.GRASS
+{
+    background-color: #56ff34;
+}
+.ICE
+{
+    background-color: #00a0d1;
+}
+.FIGHTING
+{
+    background-color: #863c1f;
+}
+.POISON
+{
+    background-color: #6c1974;
+}
+.GROUND
+{
+    background-color: #9b910d;
+}
+.FLYING
+{
+    background-color: #006199;
+}
+.PSYCHIC
+{
+    background-color: #d1008b;
+}.BUG
+{
+    background-color: #9ba596;
+}
+.ROCK
+{
+    background-color: #918254;
+}
+.GHOST
+{
+    background-color: #421688;
+}
+.DRAGON
+{
+    background-color: #3500b1;
+}
+.DARK
+{
+    background-color: #3d2f14;
+}
+.STEEL
+{
+    background-color: #8a8a8a;
+}
+.FAIRY
+{
+    background-color: #ad4196;
+}      

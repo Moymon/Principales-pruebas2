@@ -96,6 +96,24 @@ function Unique(e)
                     contenido+=`<p> ${pokes.pokemons[i].name} </p>`;
                     contenido+=`<div class="teal leng-box textverde" style="width: 100%;"></div>`;
                     contenido+=`<p> ${pokes.pokemons[i].hp} / ${pokes.pokemons[i].hp} HP </p>`;
+
+                    contenido+=`<div class="Tip">`;
+
+                    var arr = pokes.pokemons[i].type;
+                    var long = arr.lenght;
+
+                    for(j in pokes.types)
+                    {
+                        if(arr[0] == pokes.types[j].id)
+                        {
+                            contenido+=`<div class=" m-1 ${pokes.types[j].name}"> ${pokes.types[j].name} </div>`;
+                        }
+                            if(arr[1] == pokes.types[j].id)
+                            {
+                                contenido+=`<div class="m-1 ${pokes.types[j].name}"> ${pokes.types[j].name} </div>`;
+                            }
+                    }
+                    contenido+=`</div>`;
                     contenido+=`<p> Attack ${pokes.pokemons[i].attack} / Defense ${pokes.pokemons[i].defense} </p>`;
                 }
                 contenido += '</div>';
