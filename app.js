@@ -69,12 +69,11 @@ function MuestraPokedex(e)
         }
     }
     xhr.send();
+    window.scroll(0, 0);
 }
 
 function Unique(e)
 {
-    /*console.log(e);*/
-
     let url ='';
     url = 'pokedex.json';
     const xhr = new XMLHttpRequest();
@@ -85,18 +84,17 @@ function Unique(e)
         if(this.status === 200)
         {
             const pokes = JSON.parse(this.responseText);
-            
-            let contenido ='<div class="border textcenter">';
-            
+        
+            let contenido ='';
             var i;
             for(i in pokes.pokemons)
             {
                 if(e == pokes.pokemons[i].name)
-                {
+                {   contenido+='<div class="textcenter">';
                     contenido+=`<p> CP  ${pokes.pokemons[i].cp} </p>`;
                     contenido+= `<img src="${pokes.pokemons[i].sprite} ">`;
                     contenido+=`<p> ${pokes.pokemons[i].name} </p>`;
-                    contenido+=` <div class="teal leng-box textverde" style="width: 100%;">Hola</div></div>`;
+                    contenido+=`<div class="teal leng-box textverde" style="width: 100%;"></div>`;
                     contenido+=`<p> ${pokes.pokemons[i].hp} / ${pokes.pokemons[i].hp} HP </p>`;
                     contenido+=`<p> Attack ${pokes.pokemons[i].attack} / Defense ${pokes.pokemons[i].defense} </p>`;
                 }
