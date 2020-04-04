@@ -62,16 +62,14 @@
 }
 
 .Encabezado{
-    background-color: darkseagreen; 
+    background-color: firebrick;
+    color: floralwhite;
+    height: 2em;
+    line-height: 2em;
 }
 
 .Encabezado div{
     display: inline-block;
-}
-
-.Search{
-    /*display: inline-block;*/
-    width: 30%;
 }
 
 .m-1{
@@ -88,14 +86,7 @@
 }
 
 .border{
-    border: black solid 1px;
-    
-}
-
-.prod{
-    display: inline-block;
-    width: 24.7%;
-    height: 10em;
+    border: black solid 1px;   
 }
 
 .textcenter
@@ -103,19 +94,9 @@
     text-align: center;
 }
 
-.fondoblanco
+.textverde
 {
-    background-color: whitesmoke;
-}
-
-.fondogris
-{
-    background-color: gainsboro;
-}
-
-.grisfuerte
-{
-    background-color: gray;
+    color: green;
 }
 
 .teal
